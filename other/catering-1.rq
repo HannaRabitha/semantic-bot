@@ -1,0 +1,7 @@
+PREFIX ab: <http://catering.com/ns/menu#> 
+PREFIX d: <http://catering.com/ns/data#> 
+
+SELECT ?provider ?property ?val
+WHERE {
+	?provider ?property ?val .
+}

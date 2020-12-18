@@ -1,0 +1,381 @@
+# FileName kulinerid.ttl
+
+@prefix  country: <http://kuliner.com/ns/country/> .
+@prefix  kulinerid: <http://kuliner.com/ns/tentang/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>  .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> . 
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>  .
+@prefix	 general: <http://kuliner.com/ns/> .
+@prefix	 menu: <http://kuliner.com/ns/daftar/menu/> .
+
+general:food 	rdf:type	owl:Class	.
+
+
+country:indonesia	rdf:type	owl:Class	.
+country:indonesia	rdfs:subClassOf		general:food	.
+
+country:italy	rdf:type	owl:Class	.
+country:italy	rdfs:subClassOf		general:food	.
+
+country:turkey	rdf:type	owl:Class	.
+country:turkey	rdfs:subClassOf		general:food	.
+
+country:spain	rdf:type	owl:Class	.
+country:spain	rdfs:subClassOf		general:food	.
+
+country:chinese	rdf:type	owl:Class	.
+country:chinese	rdfs:subClassOf		general:food	.
+
+country:france	rdf:type	owl:Class	.
+country:france	rdfs:subClassOf		general:food	.
+
+country:usa	rdf:type	owl:Class	.
+country:usa	rdfs:subClassOf		general:food	.
+
+
+kulinerid:province	rdf:type	rdf:Property	.
+kulinerid:price	rdf:type	rdf:Property	.
+kulinerid:image	rdf:type	rdf:Property	.
+kulinerid:ingredients	rdf:type	rdf:Property	.
+kulinerid:main	rdf:type	rdf:Property	.
+kulinerid:serving	rdf:type	rdf:Property	.
+kulinerid:heat	rdf:type	rdf:Property	.
+kulinerid:category	rdf:type	rdf:Property	.
+kulinerid:variant	rdf:type	rdf:Property	.
+
+
+menu:Mie_Aceh   rdf:type	     country:indonesia .
+menu:Mie_Aceh	rdfs:comment		"Makanan khas aceh"	.
+menu:Mie_Aceh   kulinerid:province     "Nanggroe Aceh Darussalam" .
+menu:Mie_Aceh   kulinerid:price    "Rp 8.000 - 30.000 per porsi" .
+menu:Mie_Aceh   kulinerid:image   "https://www.rumahmesin.com/wp-content/uploads/2016/04/ingin-tahu-bagaimana-cara-membuat-mie-aceh-yang-lezat-dan-enak-ini-dia-langkahnya-3.jpg" .
+menu:Mie_Aceh	kulinerid:ingredients	"Mie, Bawang putih, Bawang merah, Bumbu, Telur, Sayur, Daging" .
+menu:Mie_Aceh	kulinerid:main			"Mie" .
+menu:Mie_Aceh	kulinerid:serving		"Goreng, Rebus" .
+menu:Mie_Aceh	kulinerid:heat		"Panas" .
+menu:Mie_Aceh	kulinerid:category				"Menu Utama" 	.
+menu:Mie_Aceh   kulinerid:variant     "Mie Aceh Kuah, Mie Aceh Goreng" .
+
+menu:Kimchi   rdf:type	     country:korea .
+menu:Kimchi	  rdfs:comment		"Makanan khas korea"	.
+menu:Kimchi   kulinerid:province     "Korea" .
+menu:Kimchi   kulinerid:price    "Rp 20.000 - 90.000 per porsi" .
+menu:Kimchi   kulinerid:image   "https://id.wikipedia.org/wiki/Berkas:Gimchi.jpg" .
+menu:Kimchi	  kulinerid:ingredients	"Cumi-cumi, Bawang putih, Bawang merah, Daun bawang, Gula, Sayuran, Garam, Makanan laut, Jahe, Cabai merah, Tiram" .
+menu:Kimchi	  kulinerid:main			"Sayuran" .
+menu:Kimchi	  kulinerid:serving		"Fermentasi, Diberi bumbu pedas" .
+menu:Kimchi	  kulinerid:heat		"Panas" .
+menu:Kimchi	  kulinerid:category				"Menu Utama" 	.
+menu:Kimchi   kulinerid:variant     "Kimchi jjigae(sup kimchi), Kimchi bokkeumbap(nasi goreng kimchi)" .
+
+menu:Galbi    rdf:type	     country:korea .
+menu:Galbi	  rdfs:comment		"Makanan khas korea"	.
+menu:Galbi    kulinerid:province     "Korea" .
+menu:Galbi    kulinerid:price    "Rp 70.000 - 90.000 per porsi" .
+menu:Galbi    kulinerid:image   "https://id.wikipedia.org/wiki/Berkas:Korean.food-Galbi-03.jpg" .
+menu:Galbi	  kulinerid:ingredients	"Iga sapi, Bawang putih, Kecap asin, Minyak wijen, Gula, Garam" .
+menu:Galbi	  kulinerid:main			"Iga sapi" .
+menu:Galbi	  kulinerid:serving		"Dipanggang" .
+menu:Galbi	  kulinerid:heat		"Panas" .
+menu:Galbi	  kulinerid:category				"Menu Utama" 	.
+menu:Galbi    kulinerid:variant     "Dakgalbi, Jokbal" .
+
+menu:Bulgogi    rdf:type	     country:korea .
+menu:Bulgogi	rdfs:comment		"Makanan khas korea"	.
+menu:Bulgogi    kulinerid:province     "Korea" .
+menu:Bulgogi    kulinerid:price    "Rp 70.000 - 90.000 per porsi" .
+menu:Bulgogi    kulinerid:image   "https://id.wikipedia.org/wiki/Berkas:Korean.food-Bulgogi-01.jpg" .
+menu:Bulgogi	kulinerid:ingredients	"Daging, Bawang putih, Kecap asin, Gula" .
+menu:Bulgogi	kulinerid:main			"Daging" .
+menu:Bulgogi	kulinerid:serving		"Dipanggang" .
+menu:Bulgogi	kulinerid:heat		"Panas" .
+menu:Bulgogi	kulinerid:category				"Menu Utama" 	.
+menu:Bulgogi    kulinerid:variant     "Dwaeji bulgogi, Dak bulgogi, ojingeo bulgogi" .
+
+menu:Dondorma   rdf:type			country:turkey	.
+menu:Dondorma	  rdfs:comment		"Makanan khas turkey"	.
+menu:Dondorma    kulinerid:province     "Kahramanmaraş" .
+menu:Dondorma    kulinerid:price    "1 TL - 3,5 TL/tangkai" .
+menu:Dondorma    kulinerid:image  "https://i.ytimg.com/vi/sFaVCNM-9gc/hqdefault.jpg" .
+menu:Dondorma 	kulinerid:ingredients	"susu, gula, salep dan mastic" .
+menu:Dondorma 	kulinerid:main			"susu" .
+menu:Dondorma 	kulinerid:serving		"dibolak-balik oleh penyajinya tanpa takut es krim mencair dan jatuh." .
+menu:Dondorma 	kulinerid:heat		"Beku" .
+menu:Dondorma 	kulinerid:category				"Menu Utama" 	.
+menu:Dondorma    kulinerid:variant     "vanila, coklat, strawberry dan orange. " .
+
+menu:Kebab    rdf:type	     country:turkey .
+menu:Kebab	  rdfs:comment		"Makanan khas turkey"	.
+menu:Kebab   kulinerid:province     "Bursa" .
+menu:Kebab   kulinerid:price    "2 TL - 3 TL/porsi" .
+menu:Kebab   kulinerid:image   "https://services.sportourism.id/fileload/28cd575b-9d2b-33c3-aa12-91819e4f73cc.jpg?q=75" .
+menu:Kebab	kulinerid:ingredients	"roti pita,daging dan sayuran" .
+menu:Kebab	kulinerid:main	"daging" .
+menu:Kebab	kulinerid:serving		"daging panggang/bakar yang ditusuk memakai tusukan atau roti pita." .
+menu:Kebab	kulinerid:heat		"Panas" .
+menu:Kebab	kulinerid:category				"Menu Utama" 	.
+menu:Kebab   kulinerid:variant     "Ditusuk,Dibungkus roti pita" .
+
+menu:Turkis_Delight    	rdf:type	     		country:turkey .
+menu:Turkis_Delight	  	rdfs:comment			"Makanan khas turkey"	.
+menu:Turkis_Delight   	kulinerid:province     	"	Ottoman Empire" .
+menu:Turkis_Delight   	kulinerid:price    		"15-20TL/box" .
+menu:Turkis_Delight   	kulinerid:image   		"https://www.propertyturkey.com/files/thumb/turkish-delight-lokum.jpg/708" .
+menu:Turkis_Delight		kulinerid:ingredients	"gel pati,gula,potongan kurma, kacang-kacangan serta bahan perasa seperti lemon, kayu manis, atau mint, rosewater, atau jeruk Bergamot" .
+menu:Turkis_Delight		kulinerid:main			"gel pati dan gula" .
+menu:Turkis_Delight		kulinerid:serving		"dihidangkan dalam bentuk potongan-potongan kecil berupa kubus atau bundar, berbagai warna, serta ditaburi dengan gula bubuk supaya tak lengket." .
+menu:Turkis_Delight		kulinerid:heat			"-" .
+menu:Turkis_Delight		kulinerid:category		"Menu Utama" 	.
+menu:Turkis_Delight   	kulinerid:variant     	"Multiple" .
+
+menu:Risotto	rdf:type	     country:italia .
+menu:Risotto	rdfs:comment		"Makanan Khas Italia Utara"	.
+menu:Risotto	kulinerid:province     "Italia Utara" .
+menu:Risotto	kulinerid:price   "Rp 42.000 - 190.000 per porsi" .
+menu:Risotto	kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/4/40/Italian_Risotto.png" .
+menu:Risotto	kulinerid:ingredients	"Nasi, Kaldu daging, Ayam, Sayuran, Boga bahari, Kacang-kacangan, Anggur" .
+menu:Risotto	kulinerid:main			"Nasi" .
+menu:Risotto	kulinerid:serving		"Panggang" .
+menu:Risotto	kulinerid:heat		"Panas" .
+menu:Risotto	kulinerid:category			"Hidangan Pembuka" 	.
+menu:Risotto	kulinerid:variant     "Risotto alla milanese, Risotto al Barolo, Risotto al nero di seppia, Risi e Bisi, Risotto alla zucca, Risotto alla pilota, Risotto ai funghi" .
+
+menu:Abbacchio_al_forno	rdf:type	     country:italia .
+menu:Abbacchio_al_forno	rdfs:comment		"Makanan Khas Italia Tengah"	.
+menu:Abbacchio_al_forno	kulinerid:province     "Italia Tengah" .
+menu:Abbacchio_al_forno	kulinerid:price    "Rp 50.000 - 248.000 per porsi" .
+menu:Abbacchio_al_forno	kulinerid:image   "https://ekalucy.files.wordpress.com/2011/10/iqh.jpg" .
+menu:Abbacchio_al_forno	kulinerid:ingredients	"Daging domba, Rosemary" .
+menu:Abbacchio_al_forno	kulinerid:main	"Daging Domba" .
+menu:Abbacchio_al_forno	kulinerid:serving		"Panggang" .
+menu:Abbacchio_al_forno	kulinerid:heat		"Panas" .
+menu:Abbacchio_al_forno	kulinerid:category				"Menu Utama" 	.
+menu:Abbacchio_al_forno	kulinerid:variant     "Abbacchio al forno" .
+
+menu:Tiella		rdf:type	     country:italia .
+menu:Tiella		rdfs:comment		"Makanan Khas Italia Selatan"	.
+menu:Tiella		kulinerid:province     "Italia Selatan" .
+menu:Tiella		kulinerid:price    "Rp 20.000 - 100.000 per porsi" .
+menu:Tiella		kulinerid:image   "https://ekalucy.files.wordpress.com/2011/10/tiella2.jpg" .
+menu:Tiella		kulinerid:ingredients	"Sayuran, Makaroni" .
+menu:Tiella		kulinerid:main	"Sayuran" .
+menu:Tiella		kulinerid:serving		"Rebus" .
+menu:Tiella		kulinerid:heat		"Panas" .
+menu:Tiella		kulinerid:category				"Menu Utama" 	.
+menu:Tiella   	kulinerid:variant     "Tiella" .
+
+menu:Frittata		rdf:type	     country:italia .
+menu:Frittata		rdfs:comment		"Makanan Khas Italia Kepulauan"	.
+menu:Frittata   kulinerid:province     "Kepulauan" .
+menu:Frittata   kulinerid:price    "Rp 15.000 - 50.000 per porsi" .
+menu:Frittata   kulinerid:image   "https://ms.wikipedia.org/wiki/Frittata#/media/File:Frittata.jpg" .
+menu:Frittata	kulinerid:ingredients	"Telur, Daging, Keju, Sayuran, Pasta" .
+menu:Frittata	kulinerid:main	"Telur" .
+menu:Frittata	kulinerid:serving		"Goreng" .
+menu:Frittata	kulinerid:heat		"Panas" .
+menu:Frittata	kulinerid:category				"Menu Utama" 	.
+menu:Frittata   kulinerid:variant     "Frittata, Fritaja" .
+
+menu:Naengmyeon		rdf:type	     country:korea .
+menu:Naengmyeon		rdfs:comment		"Makanan Khas Pyeongan"	.
+menu:Naengmyeon		kulinerid:province     "Pyeongan" .
+menu:Naengmyeon		kulinerid:price    "Rp 15.000 - 90.000 per porsi" .
+menu:Naengmyeon		kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/c/cd/Korean_cold_buckwheat_noodle_soup-Mul_naengmyeon-01.jpg" .
+menu:Naengmyeon 	kulinerid:ingredients	"Mie tipis yang terbuat dari tepung buckwheat (jenis gandum), Kuah tulang sapi, Sayuran, Telur rebus, Daging sapi" .
+menu:Naengmyeon		kulinerid:main	"Mie" .
+menu:Naengmyeon		kulinerid:serving		"Rebus" .
+menu:Naengmyeon		kulinerid:heat		"Dingin" .
+menu:Naengmyeon		kulinerid:category			"Menu Utama" 	.
+menu:Naengmyeon		kulinerid:variant     "Mul naengmyeon, Bibim naengmyeon" .
+
+menu:gimbap		rdf:type	     country:korea .
+menu:gimbap		rdfs:comment		"Makanan Khas Chungmu"	.
+menu:gimbap		kulinerid:province     "Chungmu" .
+menu:gimbap		kulinerid:price    "Rp 8.000 - 35.000 per porsi" .
+menu:gimbap		kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/5/51/Korean.food-Kimbap-03.jpg" .
+menu:gimbap		kulinerid:ingredients	"Nasi, Daging, Garam, Minyak wijen atau Minyak perilla, Telur, Kimchi, Ketimun, Bayam, Wortel, Danmuji (acar lobak), Rumput laut kering" .
+menu:gimbap		kulinerid:main	"Nasi" .
+menu:gimbap		kulinerid:serving		"Gulung" .
+menu:gimbap		kulinerid:heat		"Panas / Dingin" .
+menu:gimbap		kulinerid:category				"Menu Utama" 	.
+menu:gimbap		kulinerid:variant     "Gimbap" .
+
+menu:tteokbokki		rdf:type	     country:korea .
+menu:tteokbokki		rdfs:comment		"Makanan Khas Sindang-dong"	.
+menu:tteokbokki		kulinerid:province     "Sindang-dong" .
+menu:tteokbokki		kulinerid:price    "Rp 10.000 - 40.000 per porsi" .
+menu:tteokbokki		kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/4/4d/Tteokbokki.JPG" .
+menu:tteokbokki		kulinerid:ingredients	"Tteok (kue beras), Bumbu gochujang pedas / manis" .
+menu:tteokbokki		kulinerid:main	"Tteok" .
+menu:tteokbokki		kulinerid:serving		"Rebus" .
+menu:tteokbokki		kulinerid:heat		"Panas" .
+menu:tteokbokki		kulinerid:category				"Hidangan Penutup" 	.
+menu:tteokbokki		kulinerid:variant     "Haemul tteokbokki, Gungjung tteokbokki, Tteokbokki keju, Tteok kkochi" .
+
+menu:bibimbap		rdf:type	     country:korea .
+menu:bibimbap		rdfs:comment		"Makanan Khas Gyeongsang"	.
+menu:bibimbap		kulinerid:province     "Gyeongsang" .
+menu:bibimbap		kulinerid:price    "Rp 15.000 - 75.000 per porsi" .
+menu:bibimbap		kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/c/ce/Korean_cuisine-Jeonju_bibimbap-01.jpg" .
+menu:bibimbap		kulinerid:ingredients	"Nasi putih, Sayur-sayuran, Daging sapi, Telur, Saus pedas gochujang" .
+menu:bibimbap		kulinerid:main	"Nasi" .
+menu:bibimbap		kulinerid:serving		"Campur" .
+menu:bibimbap		kulinerid:heat		"Panas" .
+menu:bibimbap		kulinerid:category				"Menu Utama" 	.
+menu:bibimbap		kulinerid:variant     "Dolsot Bibimbap, Jinju Bibimbap" .
+
+menu:Tapas		rdf:type	     country:spain .
+menu:Tapas		rdfs:comment		"Makanan Khas Spanyol"	.
+menu:Tapas   	kulinerid:province     "Kepulauan" .
+menu:Tapas   	kulinerid:price    "Rp 15.000 - 18.000 per" .
+menu:Tapas   	kulinerid:image   "https://cdn.idntimes.com/content-images/community/2017/08/tapas-e60be41b47c08e5788ce845dbf4f63d4.jpg" .
+menu:Tapas		kulinerid:ingredients	"Roti, Daging, Ikan, Keju, Telur, Buah Zaitun, Bawang Bombay" .
+menu:Tapas		kulinerid:main	"Roti" .
+menu:Tapas		kulinerid:serving		"Goreng" .
+menu:Tapas		kulinerid:heat		"Panas" .
+menu:Tapas		kulinerid:category				"Makanan Ringan" 	.
+menu:Tapas   	kulinerid:variant     "Montadito de ternera con queso azul cebolla caramelizada, Tosta de brie y cebolla caramelizada, Pintxo de bonito con cebolla caramelizada y tomate " .
+
+menu:Paella		rdf:type	     country:spain .
+menu:Paella		rdfs:comment		"Makanan Khas Spanyol"	.
+menu:Paella   	kulinerid:price    "Rp 150.000 - 200.000 per porsi" .
+menu:Paella   	kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/e/ed/01_Paella_Valenciana_original.jpg" .
+menu:Paella		kulinerid:ingredients	"Beras, Udang, Bubuk Saffron, Ayam, Cumi-cumi, Kacang Polong, Paprika" .
+menu:Paella		kulinerid:main	"Beras" .
+menu:Paella		kulinerid:serving		"Goreng" .
+menu:Paella		kulinerid:heat		"Panas" .
+menu:Paella		kulinerid:category				"Menu Utama" 	.
+menu:Paella   	kulinerid:variant     "Paella Mixta" .
+
+menu:Rabo_de_toro		rdf:type	     country:spain .
+menu:Rabo_de_Toro		rdfs:comment		"Makanan Khas Spanyol"	.
+menu:Rabo_de_toro   	kulinerid:province     "Andalucia" .
+menu:Rabo_de_toro   	kulinerid:price    "Rp 42.000 - 190.000 per porsi" .
+menu:Rabo_de_toro   	kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/4/48/Rabo_de_toro-Estofado_%2801%29.JPG" .
+menu:Rabo_de_toro		kulinerid:ingredients	"Daging Banteng, Wortel, Sayuran, Bawang, Buah Zaitun, Wine" .
+menu:Rabo_de_toro		kulinerid:main	"Daging Banteng" .
+menu:Rabo_de_toro		kulinerid:serving		"Rebus" .
+menu:Rabo_de_toro		kulinerid:heat		"Panas" .
+menu:Rabo_de_toro		kulinerid:category				"Menu Utama" 	.
+menu:Rabo_de_toro   	kulinerid:variant     "Rabo de toro matador" .
+
+menu:Fabada_Asturiana		rdf:type	     country:spain .
+menu:Fabada_Asturiana		rdfs:comment		"Makanan Khas Spanyol"	.
+menu:Fabada_Asturiana   	kulinerid:province     "Asturias" .
+menu:Fabada_Asturiana   	kulinerid:price    "Rp 30.000 - 50.000 per porsi" .
+menu:Fabada_Asturiana   	kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/d/df/Fabada_y_sidra.jpg" .
+menu:Fabada_Asturiana		kulinerid:ingredients	"Daging, Kacang, Garam, Kunyit, Backing Soda" .
+menu:Fabada_Asturiana		kulinerid:main	"Kacang" .
+menu:Fabada_Asturiana		kulinerid:serving		"Rebus" .
+menu:Fabada_Asturiana		kulinerid:heat		"Panas" .
+menu:Fabada_Asturiana		kulinerid:category				"Menu Utama" 	.
+menu:Fabada_Asturiana   	kulinerid:variant     "Fabada with Chorizo Segar, Fabada with Chorizo Kue Kering" .
+
+menu:Gambas		rdf:type	     country:spain .
+menu:Gambas		rdfs:comment		"Makanan Khas Spanyol"	.
+menu:Gambas   	kulinerid:province     "Spanyol" .
+menu:Gambas   	kulinerid:price    "Rp 50.000 - 75.000 per porsi" .
+menu:Gambas   	kulinerid:image   "https://es.wikipedia.org/wiki/Gambas_al_ajillo#/media/File:Gambas_al_ajillo.jpg" .
+menu:Gambas		kulinerid:ingredients	"Udang, Kacang, Bawang Putih, Minyak Zaitun" .
+menu:Gambas		kulinerid:main	"Udang" .
+menu:Gambas		kulinerid:serving		"Goreng" .
+menu:Gambas		kulinerid:heat		"Panas" .
+menu:Gambas		kulinerid:category				"Menu Utama" 	.
+menu:Gambas   	kulinerid:variant     "Gambas al pilpil y Cocido de garbanzos puchero" .
+
+menu:Pulpo		rdf:type	     country:spain .
+menu:Pulpo		rdfs:comment		"Makanan Khas Spanyol"	.
+menu:Pulpo   	kulinerid:province     "Galacia" .
+menu:Pulpo   	kulinerid:price    "Rp 50.000 - 80.000 per porsi" .
+menu:Pulpo   	kulinerid:image   "https://es.wikipedia.org/wiki/Pulpo_a_la_gallega#/media/File:Raci%C3%B3nPulpo.jpg" .
+menu:Pulpo		kulinerid:ingredients	"Gurita, Paprika, Kentang, Garam, Minyak Zaitun" .
+menu:Pulpo		kulinerid:main	"Gurita" .
+menu:Pulpo		kulinerid:serving		"Goreng" .
+menu:Pulpo		kulinerid:heat		"Panas" .
+menu:Pulpo		kulinerid:category				"Menu Utama" 	.
+menu:Pulpo  	kulinerid:variant     "Pulpo A la Gallega" .
+
+menu:Gazpacho		rdf:type	     country:spain .
+menu:Gazpacho		rdfs:comment		"Makanan Khas Spanyol"	.
+menu:Gazpacho   	kulinerid:province     "Andalucia" .
+menu:Gazpacho   	kulinerid:price    "Rp 30.000 - 45.000 " .
+menu:Gazpacho   	kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/3/35/Gazpacho_con_su_guarnici%C3%B3n_-_jlastras.jpg" .
+menu:Gazpacho		kulinerid:ingredients	"Tomat, Paprika, Minyak Zaitun, Roti Tawar, Bawang, Cuka" .
+menu:Gazpacho		kulinerid:main	"Tomat" .
+menu:Gazpacho		kulinerid:serving		"Rebus" .
+menu:Gazpacho		kulinerid:heat		"Dingin" .
+menu:Gazpacho		kulinerid:category				"Menu Utama" 	.
+menu:Gazpacho   	kulinerid:variant     "Gazpacho" .
+
+menu:Sate_Padang	rdf:type		country:indonesia	.
+menu:Sate_Padang	rdfs:comment	"Makanan khas Sumatera Barat"	.
+menu:Sate_Padang   kulinerid:province     "Sumatera Barat" .
+menu:Sate_Padang   kulinerid:price    "Rp 10.000 - 30.000 per porsi" .
+menu:Sate_Padang   kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/a/ad/Sate_Ponorogo.jpg" .
+menu:Sate_Padang	kulinerid:ingredients	"Daging Ayam/Sapi, Cabai, Bawang Putih, Garam, Kunyit, Jahe, Tepung Beras" .
+menu:Sate_Padang	kulinerid:main	"Daging Ayam/Sapi" .
+menu:Sate_Padang	kulinerid:serving		"Bakar" .
+menu:Sate_Padang	kulinerid:heat		"Panas" .
+menu:Sate_Padang	kulinerid:category				"Menu Utama" 	.
+menu:Sate_Padang  	kulinerid:variant     "Sate Ayam, Sate Jeroan, Sate Sapi" .
+
+menu:Gudeg	rdf:type		country:indonesia	.
+menu:Gudeg	rdfs:comment	"Makanan khas D.I Yogyakarta"	.
+menu:Gudeg   kulinerid:province     "D.I. Yogyakarta" .
+menu:Gudeg   kulinerid:price    "Rp 8.000 - 20.000 per porsi" .
+menu:Gudeg   kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/3/31/Nasi_Gudeg.jpg" .
+menu:Gudeg	kulinerid:ingredients	"Nangka, Santan, Bawang, Gula Aren, Kemiri, Daun Salam, Ketumbar" .
+menu:Gudeg	kulinerid:main	"Nangka" .
+menu:Gudeg	kulinerid:serving		"Rebus" .
+menu:Gudeg	kulinerid:heat		"Panas" .
+menu:Gudeg	kulinerid:category				"Menu Utama" 	.
+menu:Gudeg   kulinerid:variant     "Gudeg Opor Ayam, Gudeg Telur, Gudeg Nasi" .
+
+menu:Pempek		rdf:type		country:indonesia	.
+menu:Pempek		rdfs:comment	"Makanan khas Sumatera Selatan"	.
+menu:Pempek    kulinerid:province     "Sumatera Selatan" .
+menu:Pempek    kulinerid:price    "Rp 5.000 - 15.000 per porsi" .
+menu:Pempek    kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/6/62/Pempekraden_kapal_selam_dan_kulit_ikan.jpg" .
+menu:Pempek 	kulinerid:ingredients	"Telur, Sagu, Garam, Cuka, Gula Aren, Ebi, Asam Jawa, Ikan Tenggiri" .
+menu:Pempek 	kulinerid:main	"Ikan Tenggiri" .
+menu:Pempek 	kulinerid:serving		"Goreng, Rebus" .
+menu:Pempek 	kulinerid:heat		"Panas" .
+menu:Pempek 	kulinerid:category				"Makanan Ringan, Menu Utama" 	.
+menu:Pempek    kulinerid:variant     "Pempek Kapal Selam, Pempek Telur, Pempek Adaan" .
+
+menu:Kerak_Telur	rdf:type		country:indonesia	.
+menu:Kerak_Telur	rdfs:comment	"Makanan khas DKI Jakarta"	.
+menu:Kerak_Telur   kulinerid:province     "DKI Jakarta" .
+menu:Kerak_Telur   kulinerid:price    "Rp 15.000 - 30.000 per porsi" .
+menu:Kerak_Telur   kulinerid:image   "http://1.bp.blogspot.com/-y3Toa51TM-I/VgQmbWer7kI/AAAAAAAACns/lmkYSxmYz3c/s1600/resep-dan-cara-membuat-kerak-telor-1.jpg" .
+menu:Kerak_Telur	kulinerid:ingredients	"Telur, Ketan Putih, Ebi, Kelapa Sangrai, Cabai, Ketumbar, Garam" .
+menu:Kerak_Telur	kulinerid:main	"Telur" .
+menu:Kerak_Telur	kulinerid:serving		"Goreng" .
+menu:Kerak_Telur	kulinerid:heat		"Panas" .
+menu:Kerak_Telur	kulinerid:category				"Makanan Ringan" 	.
+menu:Kerak_Telur   kulinerid:variant     "Kerak Telur Bebek, Kerak Telur Ayam" .
+
+menu:Soto_Banjar	rdf:type		country:indonesia	.
+menu:Soto_Banjar	rdfs:comment	"Makanan khas Kalimantan Selatan"	.
+menu:Soto_Banjar   kulinerid:province     "Kalimantan Selatan" .
+menu:Soto_Banjar   kulinerid:price    "Rp 22.000 - 40.000 per porsi" .
+menu:Soto_Banjar   kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/e/e4/Soto_Banjar_ketupat.jpg" .
+menu:Soto_Banjar	kulinerid:ingredients	"Ayam, Kentang, Bawang, Telur, Ketupat, Kecap, Cabai" .
+menu:Soto_Banjar	kulinerid:main	"Ayam dan Ketupat" .
+menu:Soto_Banjar	kulinerid:serving		"Rebus" .
+menu:Soto_Banjar	kulinerid:heat		"Panas" .
+menu:Soto_Banjar	kulinerid:category				"Menu Utama" 	.
+menu:Soto_Banjar   	kulinerid:variant     "Soto Banjar Ketupat" .
+
+menu:Tinutan	rdf:type		country:indonesia	.
+menu:Tinutan	rdfs:comment	"Makanan khas sulawesi utara"	.
+menu:Tinutuan   kulinerid:province     "Sulawesi Utara" .
+menu:Tinutuan   kulinerid:price    "Rp 8.000 - 30.000 per porsi" .
+menu:Tinutuan   kulinerid:image   "https://upload.wikimedia.org/wikipedia/commons/9/93/Tinutuan_bubur_Manado.JPG" .
+menu:Tinutuan   kulinerid:ingredients	"Jagung, Kangkung, Ketela Pohon, Labu, Bayam" .
+menu:Tinutuan   kulinerid:main	"Bubur" .
+menu:Tinutuan   kulinerid:serving		"Rebus" .
+menu:Tinutuan   kulinerid:heat		"Panas" .
+menu:Tinutuan   kulinerid:category				"Menu Utama" 	.
+menu:Tinutuan   kulinerid:variant     "Tinutuan Ikan Asin" .

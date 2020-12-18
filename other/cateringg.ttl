@@ -1,0 +1,30 @@
+#filename:	CATERING.ttl
+
+@prefix ab:  <http://catering.com/ns/menu#> .
+@prefix d:   <http://catering.com/ns/data#> .
+
+d:KFC	ab:Nama		"Kentucky Fried Chicken" .
+d:KFC	ab:Pendiri	"Harlan Sanders" .
+d:KFC	ab:negara	"United States" .
+d:KFC	ab:jalan	"North Cabin,Kentucky" .
+d:KFC	ab:kota		"Kentucky" .
+d:KFC	ab:gambar	"http://www.kfcku.com/assets/gallery/thumb/1411958229_246x246-resize.png" .
+d:KFC	ab:menu		"kombo super family" .
+
+d:PIZZA	ab:Nama		"PIZZA HUT" .
+d:PIZZA	ab:Pendiri	"Dan Carney and Frack Carney" .
+d:PIZZA	ab:negara	"United States" .
+d:PIZZA	ab:jalan	"Wichita" .
+d:PIZZA	ab:kota		"Kansas" .
+d:PIZZA	ab:gambar	"http://blog.pizzahut.com/wp-content/uploads/2016/05/BaconStuffedCrust-e1463164552103.jpg" .
+d:PIZZA	ab:menu		"Stuffed Crust Pizza" .
+
+d:RECHEESE	ab:Nama		"Recheese Factory" .
+d:RECHEESE	ab:Pendiri	"-" .
+d:RECHEESE	ab:negara	"INDONESIA" .
+d:RECHEESE	ab:jalan	"Wichi" .
+d:RECHEESE	ab:kota		"BANDUNG" .
+d:RECHESEE	ab:gambar	"http://2.bp.blogspot.com/-j5EQEihqGOg/Vg1xa3sqyLI/AAAAAAAAD0c/pJRAh-RwrZw/s1600/richeese%2Bcombo.jpg" .
+d:RECHEESE	ab:menu		"cOMBO 1 CHICKEN" .
+
+

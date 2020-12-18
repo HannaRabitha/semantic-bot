@@ -1,0 +1,140 @@
+<http://kuliner.com/ns/country/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang negara spesifik dimana makanan tersebut berasal atau diperkenalkan."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/country/> ;
+    rdfs:label "country"@id .
+
+<http://kuliner.com/ns/destinasi/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang nama makanan."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/menu/> ;
+    rdfs:label "menu"@id .
+
+<http://kuliner.com/ns/country/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang negara spesifik dimana makanan tersebut berasal atau diperkenalkan."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/country/> ;
+    rdfs:label "country"@id .
+
+<http://kuliner.com/ns/country/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang negara spesifik dimana makanan tersebut berasal atau diperkenalkan."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/country/> ;
+    rdfs:label "country"@id .
+
+<http://kuliner.com/ns/general/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang sesuatu secara general."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/general/> ;
+    rdfs:label "general"@id .
+
+<http://kuliner.com/ns/tentang/province/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang provinsi tempat makanan tersebut berasal."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/province/> ;
+    rdfs:label "province"@id .
+
+<http://kuliner.com/ns/tentang/image/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Merupakan tentang link gambar makanan ."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/image/> ;
+    rdfs:label "image"@id .
+
+<http://kuliner.com/ns/tentang/price/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan rentang harga makanan dalam rupiah ."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/price/> ;
+    rdfs:label "image"@id .
+
+<http://kuliner.com/ns/tentang/ingredients/>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan bahan-bahan yang diperlukan untuk membuat makanan ."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/ingredients/> ;
+    rdfs:label "ingredients"@id .
+
+<http://kuliner.com/ns/tentang/main>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang bahan utama dalam pembuatan makanan ."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/main/> ;
+    rdfs:label "main"@id .
+
+<http://kuliner.com/ns/tentang/serving>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang cara penyajian makanan ."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/serving/> ;
+    rdfs:label "serving"@id .
+
+<http://kuliner.com/ns/tentang/heat>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang suhu penyajian makanana ."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/heat/> ;
+    rdfs:label "heat"@id .
+
+<http://kuliner.com/ns/tentang/category>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang kategori makanan atau jenis makanan ."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/category/> ;
+    rdfs:label "category"@id .
+
+<http://kuliner.com/ns/tentang/variant>
+    dcterms:description "Salah satu property dari turtle kulinerid."@id ;
+    dcterms:hasVersion "1.0.0" ;
+    dcterms:issued "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    dcterms:modified "2017-12-22"^^<http://www.w3.org/2001/XMLSchema#date> ;
+    a rdf:Property ;
+    rdfs:comment "Menjelaskan tentang berbagai variasi makanan ."@id ;
+    rdfs:isDefinedBy <http://localhost/food/ns/variant/> ;
+    rdfs:label "variant"@id .
+
